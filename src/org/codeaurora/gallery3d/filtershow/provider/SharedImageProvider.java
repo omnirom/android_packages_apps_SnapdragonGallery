@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.gallery3d.filtershow.provider;
+package org.codeaurora.gallery.filtershow.provider;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -35,7 +35,7 @@ public class SharedImageProvider extends ContentProvider {
     private static final String LOGTAG = "SharedImageProvider";
 
     public static final String MIME_TYPE = "image/jpeg";
-    public static final String AUTHORITY = "com.android.gallery3d.filtershow.provider.SharedImageProvider";
+    public static final String AUTHORITY = "org.codeaurora.gallery.filtershow.provider.SharedImageProvider";
     public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/image");
     public static final String PREPARE = "prepare";
 

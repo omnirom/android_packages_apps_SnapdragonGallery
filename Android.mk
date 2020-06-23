@@ -32,9 +32,9 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay
 
 LOCAL_PACKAGE_NAME := SnapdragonGallery
 
-LOCAL_OVERRIDES_PACKAGES := Gallery Gallery3D GalleryNew3D Gallery2
-
 LOCAL_JNI_SHARED_LIBRARIES := libjni_gallery_eglfence libjni_gallery_filters libjni_gallery_jpegstream
+LOCAL_MULTILIB := both
+
 LOCAL_SHARED_LIBRARIES += libjni_dualcamera libjni_trueportrait libjni_filtergenerator
 
 LOCAL_REQUIRED_MODULES := libts_detected_face_jni libts_face_beautify_jni

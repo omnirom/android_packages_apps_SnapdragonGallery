@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.gallery3d.provider;
+package org.codeaurora.gallery.provider;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -44,7 +44,7 @@ import java.io.IOException;
 public class GalleryProvider extends ContentProvider {
     private static final String TAG = "GalleryProvider";
 
-    public static final String AUTHORITY = "com.android.gallery3d.provider";
+    public static final String AUTHORITY = "org.codeaurora.gallery.provider";
     public static final Uri BASE_URI = Uri.parse("content://" + AUTHORITY);
 
     public static interface PicasaColumns {
