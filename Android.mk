@@ -11,12 +11,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := android-support-v13
 LOCAL_STATIC_JAVA_LIBRARIES += org.codeaurora.gallery.common
 LOCAL_STATIC_JAVA_LIBRARIES += xmp_toolkit
 LOCAL_STATIC_JAVA_LIBRARIES += mp4parser
-#LOCAL_STATIC_JAVA_LIBRARIES += android-support-v8-renderscript
 LOCAL_STATIC_JAVA_LIBRARIES += androidx.heifwriter_heifwriter
-
-#LOCAL_RENDERSCRIPT_TARGET_API := 18
-#LOCAL_RENDERSCRIPT_COMPATIBILITY := 18
-#LOCAL_RENDERSCRIPT_FLAGS := -rs-package-name=android.support.v8.renderscript
 
 # Keep track of previously compiled RS files too (from bundled GalleryGoogle).
 prev_compiled_rs_files := $(call all-renderscript-files-under, src)
@@ -37,13 +32,7 @@ LOCAL_AAPT_FLAGS := --auto-add-overlay
 
 LOCAL_PACKAGE_NAME := SnapdragonGallery
 
-LOCAL_PRIVILEGED_MODULE := true
-
-LOCAL_PRIVATE_PLATFORM_APIS:=true
-
 LOCAL_OVERRIDES_PACKAGES := Gallery Gallery3D GalleryNew3D Gallery2
-
-#LOCAL_SDK_VERSION := current
 
 LOCAL_JNI_SHARED_LIBRARIES := libjni_gallery_eglfence libjni_gallery_filters libjni_gallery_jpegstream
 LOCAL_SHARED_LIBRARIES += libjni_dualcamera libjni_trueportrait libjni_filtergenerator
